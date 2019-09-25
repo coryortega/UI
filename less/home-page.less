@@ -9,6 +9,15 @@ header {
   color: white;
   font-size: 2vw;
 
+  @media @mobile{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    justify-content: center;
+  }
+
 
   /* Top left text */
   .top-left {
@@ -27,8 +36,8 @@ header {
     }
     @media @mobile {
       width: 100%;
-      top: 35%;
-      left: 60%;
+      height: 100%;
+     
     }
   }
   

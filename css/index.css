@@ -235,6 +235,16 @@ header {
   /* Top left text */
   /* Centered text */
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    justify-content: center;
+  }
+}
 header .top-left {
   display: flex;
   justify-content: flex-start;
@@ -253,8 +263,7 @@ header .top-left {
 @media (max-width: 500px) {
   header .top-left {
     width: 100%;
-    top: 35%;
-    left: 60%;
+    height: 100%;
   }
 }
 header .centered {
