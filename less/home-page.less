@@ -14,15 +14,14 @@ header {
     align-items: center;
     align-content: center;
     flex-direction: column;
-    border: 2px solid black;
     justify-content: center;
   }
 
 
   /* Top left text */
   .top-left {
-    display: flex;
-    justify-content: flex-start;
+    // display: flex;
+    // justify-content: flex-start;
     position: absolute;
     top: 2%;
     left: 1%;
@@ -33,11 +32,22 @@ header {
       top: 10%;
       left: 50%;
       transform: translate(-50%, -50%);
+      width: 30%;
+      margin-top: 2%;
     }
     @media @mobile {
       width: 100%;
       height: 100%;
-     
+      left: 0%;
+      top: 0%;
+      transform: translate(0%, 0%);
+      margin-bottom: 2%;
+
+      .responsive {
+        @media @mobile{
+          width: 90%;
+        }
+      }
     }
   }
   
@@ -76,6 +86,7 @@ header {
           font-size: 3vw;
           width: 100%;
           padding-top: 3%;
+          margin-bottom: 0%;
         }
         @media @mobile{
         display: none;
